@@ -1,0 +1,55 @@
+/* responsivo */
+@media (max-width:650px) and (min-width: 300px)  {
+	body {
+		overflow-x: hidden;
+	}
+	header, 
+	.header-info, 
+	.principal,
+	.flex,
+	section,
+	main
+	{
+		width: auto;
+	}
+	.header-info,
+	header 
+	{
+		width: 485px;
+	}
+	.header-info h1 {
+		font-size: 50px;
+		letter-spacing: 5px;
+	}
+	.header-info h2 {
+		font-size: 30px;
+		margin-left: -20px;
+		letter-spacing: 2px;
+	}
+	.flex {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	.principal p,
+	.contate-zap,
+	.img_mp {
+		margin-left: 0;
+	}
+	.imagem-principal {
+		margin-left: 40px;
+	}
+	.titulo-principal {
+		text-align: left;
+		margin-left: 150px;
+	}
+	form label {
+		margin-left: 10px;
+	}
+	.input-padrao {
+		width: 80%;
+		margin-left: 20px;
+	}
+	footer {
+		margin-left: 0;
+	}
+}	

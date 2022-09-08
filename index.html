@@ -7,16 +7,18 @@
     <title>Montador de móveis</title>
     <link rel="stylesheet" href="estilos/reset.css">
     <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/responsivo.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Raleway:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/Thvg-Wood-Folders-Matte-Utilities.ico" type="image/x-icon">
 </head>
-<body>
-    <header>
-            <nav>
-                 <ul>
-                    <li><a href="index.html">Página Inicial</a></li>
+<body class="corpo">
+    <header class="header_contato">
+            <nav class="link_contato">
+                 <ul class="lista">
+                    <li class="lista"><a class="link_contato-info" href="index.html">Página Inicial</a></li>
+                    <li class="lista"><a class="link_contato-info" href="#contato">Contato</a></li>
                  </ul>
             </nav>
     </header>
@@ -24,7 +26,7 @@
         <h1>Irineu da Silva</h1>
         <h2>Montador de Móveis</h2>
     </div>
-    <main>
+    <main class="conteudo">
         <section class="principal">
             <div class="imagem-principal"><img src="images/personagem.jpeg" alt="foto de um personagem de montador de moveis"></div>
             <h2 class="titulo-principal">Saiba mais</h2>
@@ -33,12 +35,10 @@
             Como: Belford roxo, Nova Iguaçu, Mesquita, Nilópolis, São João de Meriti,</br> Seropédica, Itaguaí, Mangaratiba, Queimados, Pavuna, Irajá, Coelho Neto, </br>Vicente de carvalho, Madureira, Cascadura, Pilares, Marechal, Deodoro.</p>
                 <div class="contate-zap">
                     <a href="#">
-                        <p><em>Orçamento grátis pelo Whatsapp: (xx)xxxx-xxxx</em></p>
+                        <p><em>Orçamento grátis pelo Whatsapp: (XX)XXXXX-XXXX</em></p>
                     </a>
                 </div>
-        <section id="imagens_principal">
-                <section>
-                    <div class="img_mp"><img src="images/montador.jpg" alt="montador profissional"></div>
+                <section class="conteudo_imagens">
                          <div class="widget_body flex">
                                 <article>
                                     <div class="thumb">
@@ -76,16 +76,26 @@
                                 </article>
                             </div>
                 </section>
-            </section> 
-        <section class="contato">
-            <form>
+        <section id="contato" class="contato">
+            <form action="#">
                 <h2 class="titulo-principal">Contato</h2>
-            <label for="nome_e_sobrenome">Nome</label>
-            <input type="text" id="nome_sobrenome" class="input-padrao" required placeholder="Digite seu nome completo">
-            <label for="telefone">Telefone</label>
-            <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)XXXX-XXXX">
-            <label for="mensagem">Mensagem</label>
-            <textarea id="mensagem" cols="50" rows="5" class="input-padrao" required></textarea>
+            <div class="input-container">
+                <label class="input_label" for="nome">Nome:</label>
+                <input name="name" id="nome" class="input active input-padrao" type="text" placeholder="Digite seu nome completo" data-tipo="nome" minlength="10" required>
+                <span class="input-mensagem-erro"></span>
+            </div>
+
+            <div class="input-container">
+                <label class="input_label" for="telefone">Telefone:</label>
+                <input name="telefone" id="telefone" class="input active input-padrao" type="tel" placeholder="Digite seu número (XX)XXXXX-XXXX" data-tipo="telefone" minlength="10" required>
+                <span class="input-mensagem-erro"></span>
+            </div>
+
+            <div class="input-container">
+                <label class="input_label" for="mensagem">Mensagem:</label>
+                <textarea name="message" id="mensagem" class="input-padrao input mensagem active" cols="50" rows="5" placeholder="Digite o que deseja informar ao montador." data-tipo="mensagem" minlength="100" required></textarea>
+                <span class="input-mensagem-erro"></span>
+            </div>
             <input type="submit" value="Enviar" class="enviar">
         </form>
         <footer>
@@ -94,5 +104,7 @@
         </section>
     </section>
     </main>
+
+    <script src="js/app.js" type="module"></script>
 </body>
 </html>
