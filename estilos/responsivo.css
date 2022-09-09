@@ -3,7 +3,7 @@
 	body {
 		overflow-x: hidden;
 	}
-	header, 
+	header 
 	.header-info, 
 	.principal,
 	.flex,
@@ -11,11 +11,6 @@
 	main
 	{
 		width: auto;
-	}
-	.header-info,
-	header 
-	{
-		width: 485px;
 	}
 	.header-info h1 {
 		font-size: 50px;
@@ -30,26 +25,19 @@
 		flex-wrap: wrap;
 		flex-direction: column;
 	}
-	.principal p,
-	.contate-zap,
-	.img_mp {
-		margin-left: 0;
-	}
-	.imagem-principal {
-		margin-left: 40px;
-	}
-	.titulo-principal {
-		text-align: left;
-		margin-left: 150px;
-	}
-	form label {
-		margin-left: 10px;
-	}
 	.input-padrao {
 		width: 80%;
 		margin-left: 20px;
 	}
-	footer {
-		margin-left: 0;
-	}
 }	
+@media screen and (max-width: 450px) {
+	.header-info h1 {
+		font-size: 30px;
+	}
+	.header-info h2 {
+		font-size: 20px;
+	}	
+	.principal p {
+		font-size: 12px;
+	}
+}

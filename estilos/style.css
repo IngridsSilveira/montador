@@ -5,20 +5,15 @@
 	box-sizing: border-box;
 }
 .corpo {
-	background-color: #000000;
-	margin-top: 10px;
-	font-family: 'Raleway', sans-serif;
-	margin-bottom: 20px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+	width: 99vw;
+	height: 100vh;
+	overflow-x: hidden;
 }
 .lista {
 	display: flex;
 	flex-direction: row;
 	margin:0 10px;
-	justify-content: space-between;
+	justify-content: space-around;
 }
 .link_contato-info {
 	color: #e17259;
@@ -32,13 +27,9 @@
 .header_contato {
 	background: #34150e;
 	padding: 10px 0;
-	width: 920px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
 }
 .header-info {
 	background: #34150e;
-	width: 920px;
 	height: 200px;
 	display: flex;
 	flex-direction: column;
@@ -62,36 +53,30 @@
 	letter-spacing: 5px;
 }
 .principal {
-	background-color: #e1725927;
+	background-color: #34150e;
 	color:white;
-	width: 920px;
-	position: relative;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 /* css da pagina inicial */
-.imagem-principal {
-	margin-bottom: 10px;
-	margin-left: 150px;
-}
-.imagem-principal img {
-	width: 80%;
-	height: 350px;
-	margin-top: 20px;
-}
 .titulo-principal {
 	text-align: center;
 	font-size: 30px;
 	margin: 0 0 16px;
 	font-weight: bold;
+	letter-spacing: 5px;
+	font-family: 'Courier New', Courier, monospace;
 }
 .principal p {
-	margin-left: 130px;
-	padding: 10px;
-	font-size: 18px;
-	font-family: sans-serif;
+	text-align: center;
+	font-weight: normal;
+	font-size: 16px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .principal p strong {
+	color: #e17259;
 	font-weight: bold;
 }
 .contate-zap a {
@@ -102,17 +87,13 @@
 	font-weight: bold;
 }
 .contate-zap {
-	margin-left: 150px;
 	margin-top: 20px;
+	margin-bottom: 30px;
 }
 .flex {
     display: flex;
+	width: 800px;
     flex-wrap: wrap;
-}
-article {
-    flex: 1;
-    min-width: 300px;
-    margin-right: 10px;
 }
 article .thumb {
     margin-top: 20px;
@@ -121,28 +102,23 @@ article .thumb {
 article .thumb img {
     width: 100%;
     height: auto;
-	border-radius: 10px;
+	border-radius: 5px;
 }
-.thumb > .img1 {
-    width: 380px;
+.thumb {
+    width: 320px;
 }
-.thumb > .img2 {
-    width: 380px;
-}
-.thumb > .img3 {
-   width: 380px;
-}
-.thumb > .img4 {
-   width: 380px;
+.thumb:hover {
+	transform: scale(1.1);
+	margin-bottom: 10px;
 }
 article .resume {
-    font-size: 18px;
+    font-size: 16px;
 	color: white;
-	font-weight: bold;
     line-height: 20px;
     margin-bottom: 30px;
+	text-align: justify;
 	margin-left: 32px;
-    width: 370px;
+    width: 320px;
 }
 /* formulário */
 .input_label {
@@ -160,14 +136,9 @@ article .resume {
 	align-items: center;
 	margin-bottom: 40px;
 }
-form label {
-	display: block;
-	font-size: 20px;
-	margin: 0 0 10px;
-}
 .input-padrao {
 	display: block;
-	margin: 0 0 20px;
+	margin: 20px 0;
 	padding: 10px 25px;
 	width: 100%;
 }
@@ -192,8 +163,7 @@ form label {
 /* rodapé */
 footer {
 	text-align: center;
-	margin-top: 50px;
-	margin-left: -140px;
+	margin: 30px 0;
 }
 .copyright {
 	color: #ccc;
