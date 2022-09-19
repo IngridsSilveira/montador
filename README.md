@@ -10,7 +10,7 @@ Este é um pequeno projeto de uma página para quem trabalha com a montagem e de
 
 ### Screenshot
 
-![](images/layout.jpeg)
+![](images/montador.png)
 
 ### Links
 
