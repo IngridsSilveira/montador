@@ -1,4 +1,4 @@
-# Relógio
+# Montador de Móveis
 
 Este é um pequeno projeto de uma página para quem trabalha com a montagem e desmontagem de móveis!! 
 
@@ -10,6 +10,7 @@ Este é um pequeno projeto de uma página para quem trabalha com a montagem e de
 
 ### Screenshot
 
+![](images/montadorr.png)
 ![](images/montador.png)
 
 ### Links
