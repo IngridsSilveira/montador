@@ -16,22 +16,22 @@
 	justify-content: space-around;
 }
 .link_contato-info {
-	color: #e17259;
+	color: #fff;
 	font-weight: bold;
 	font-size: 1.5rem;
 	text-decoration: none;
 }
 .link_contato-info:hover {
-	color: #34150e;
+	color: #e17259;
 }
 .header_contato {
-	background: #f4e1dd;
+	background: url('../images/1e73c601d909172f1fabe222cf27e99e.jpg');
 	position: fixed;
 	width: 100%;
 	padding: 10px 0;
 }
 .header-info {
-	background: linear-gradient(to top,#34150e 0%, #f4e1dd 100%);
+	background: #34150e;
 	height: 200px;
 	display: flex;
 	flex-direction: column;
@@ -42,7 +42,7 @@
 	font-size: 3.5rem;
 	font-style: italic;
 	font-weight: bold;
-	color: #fff;
+	color: #e17259;
 	padding-bottom: 20px;
 	padding-top: 50px;
 	letter-spacing: 10px;
@@ -50,13 +50,13 @@
 .header-info h2 {
 	font-size: 2rem;
 	text-align: center;
-	color: #c6bcbc;
+	color: #d8d0d0;
 	font-weight: bold;
 	letter-spacing: 5px;
 }
 .principal {
-	background: linear-gradient(to bottom,#34150e 60%, #fff 100%);
-	color:white;
+	background: linear-gradient(to bottom,#34150e 90%, #fff 100%);
+	color:#fff;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
